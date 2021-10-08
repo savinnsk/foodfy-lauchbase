@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-9">
+    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <title>Foodity</title>
+    <link rel="stylesheet" href="/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"> 
+    {% block head %}
+
+
+    {%  endblock %}
+  </head>
+  <header>
+    <a>
+      <img class="logo" src="/logo.png">
+
+    </a>
+
+    <!--logo-->
+<a href="/index"class="linkHeader" >Principal</a>
+    <a class="linkHeader" href="/about">Sobre</a> <!--links do cabeçario-->
+    <a class="linkHeader" href="/revenue">Receitas</a>
+  </header>
+  <body>
+
+    {%  block content %}
+
+
+    {% endblock %}
+    
+<div id="borda">
+<p>Todos direitos Reservados,Recitas Foodfy</p>
+</div>
+
+
+<script src="/script.js" ></script>
+
+  </body>
+
+
+  
+</html>	
