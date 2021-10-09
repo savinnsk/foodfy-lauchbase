@@ -265,7 +265,7 @@ div#text{
 
 .card_recipes {
 
-  margin :0; 
+  margin :0 auto; 
 }
 
 .image_recipes{
@@ -283,8 +283,7 @@ div#text{
   font-size: 36px;
   color: black;
   height:42px;
- 
-  margin:10px  30%;
+  margin:10px auto;
 }
 
 
@@ -402,15 +401,6 @@ grid-template-columns: 1fr 1fr ;
 
 /* admin */
 
-.adminContainer header {
+.admimContainer {
 
-  background-color : black;
-  height : 5rem ;
-
-}
-
-.adminContainer .logo{
-
-  margin-left : 231px;
- 
 }

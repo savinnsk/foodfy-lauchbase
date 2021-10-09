@@ -1,7 +1,7 @@
-const routes = require('./routes') 
+import './routes' 
+
 const express = require("express");
 const server = express();
-server.use(routes)
 const nunjucks = require("nunjucks")
 
 

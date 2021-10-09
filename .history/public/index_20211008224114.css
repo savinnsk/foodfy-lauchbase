@@ -410,7 +410,6 @@ grid-template-columns: 1fr 1fr ;
 }
 
 .adminContainer .logo{
-
-  margin-left : 231px;
- 
+  color : white;
+  background-color: white;
 }

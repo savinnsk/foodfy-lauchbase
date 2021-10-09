@@ -263,10 +263,7 @@ div#text{
 /* recipes  */
 
 
-.card_recipes {
 
-  margin :0; 
-}
 
 .image_recipes{
   margin-top:50px;  
@@ -283,8 +280,8 @@ div#text{
   font-size: 36px;
   color: black;
   height:42px;
- 
-  margin:10px  30%;
+  margin-left:500px;
+  margin-top:10px;
 }
 
 
@@ -402,15 +399,6 @@ grid-template-columns: 1fr 1fr ;
 
 /* admin */
 
-.adminContainer header {
+.admimContainer {
 
-  background-color : black;
-  height : 5rem ;
-
-}
-
-.adminContainer .logo{
-
-  margin-left : 231px;
- 
 }

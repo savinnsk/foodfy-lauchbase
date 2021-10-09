@@ -402,15 +402,8 @@ grid-template-columns: 1fr 1fr ;
 
 /* admin */
 
-.adminContainer header {
+.admimContainer header {
 
-  background-color : black;
-  height : 5rem ;
+  background-color : black
 
-}
-
-.adminContainer .logo{
-
-  margin-left : 231px;
- 
 }
