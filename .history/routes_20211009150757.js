@@ -40,7 +40,7 @@ routes.get("/admin/recipes" , function (req , res) {
 
 
     
-routes.get("/admin/filds/:id", function(req , res){    
+routes.get("admin/filds/:id", function(req , res){    
     const id = req.params.id
   
     // function to find especific id     
@@ -52,7 +52,7 @@ routes.get("/admin/filds/:id", function(req , res){
          return res.send("Receita não encontrada!")
       }
   
-    res.render("admin/recipes/filds", { data_function })
+    res.render("/admin/recipes/filds", { data_function })
   })
 
 

@@ -269,9 +269,8 @@ div#text{
 }
 
 .image_recipes{
-   
-  margin-left:230px;
-  margin-right: 230px;  
+  margin-top:50px;  
+  margin-left:200px;  
   width: 940px;
   height:280px;
   border-radius:20px;
@@ -280,13 +279,12 @@ div#text{
 }
 
 .title_recipes{
-  font-family: 'roboto';
-  font-weight: bold;
+  font-family: Roboto-Bold;
   font-size: 36px;
   color: black;
   height:42px;
-  text-align: center
-
+ 
+  margin:10px  30%;
 }
 
 
@@ -294,7 +292,7 @@ div#text{
 .autor_recipes{
   padding:20px;
   text-align:center;
-  margin-top: 4px;
+  margin-top: 6px;
   color: rgb(109, 108, 108);
   font-family: Roboto-Regular;
   font-size: 20px;
@@ -468,39 +466,8 @@ cursor: pointer;
 
 
 
-/* admin recipes filds */
+/* filds */
 
 #titleFilds {
-
-  font-family:'roboto';
-  font-weight:bold;
-  font-size: 24px;
-  color: #111111;
-  margin : 55px 0 24px 231px;
-  height:28px;
-  width:350px
-}
-
-.fildsCardHeader{
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  
-}
-
-.fildsCardHeader button {
-  font-family: 'roboto';
-  font-weight: bold;
-  font-size: 16px;
-  color: #FFFFFF;
-
-  cursor: pointer;
-  height: 37px;
-  width: 137px;
-  margin-right: 190px;
-  background: #6558C3;
-  border-radius: 4px;
-  border-radius: 4px;
-
-  margin-top: 50px;
+  margin-left: 231px;
 }

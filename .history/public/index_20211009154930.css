@@ -482,6 +482,7 @@ cursor: pointer;
 }
 
 .fildsCardHeader{
+  width: 100%;
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -489,18 +490,8 @@ cursor: pointer;
 }
 
 .fildsCardHeader button {
-  font-family: 'roboto';
-  font-weight: bold;
-  font-size: 16px;
-  color: #FFFFFF;
 
-  cursor: pointer;
-  height: 37px;
-  width: 137px;
-  margin-right: 190px;
-  background: #6558C3;
-  border-radius: 4px;
-  border-radius: 4px;
 
-  margin-top: 50px;
+  margin-left: 502px;
+
 }
