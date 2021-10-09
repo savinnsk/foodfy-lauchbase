@@ -424,16 +424,5 @@ grid-template-columns: 1fr 1fr ;
 
 .adminContent  section {
   display : grid ; 
-  grid-template-columns: 480px 480px;
-}
-
-.adminContent  section .card {
-  display : grid ; 
   grid-template-columns: 1fr 1fr;
-}
-
-.adminContent  section .card  img {
-  width: 172px;
-  height : 80px;
-  border-radius: 8.57px;
 }

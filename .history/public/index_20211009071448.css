@@ -417,23 +417,9 @@ grid-template-columns: 1fr 1fr ;
 
 
 .adminContent h2 {
-  margin : 50px 0 30px 231px;
+  margin : 50px 0 0 231px;
   width : 198px ;
   height : 28px ;
-}
 
-.adminContent  section {
-  display : grid ; 
-  grid-template-columns: 480px 480px;
-}
 
-.adminContent  section .card {
-  display : grid ; 
-  grid-template-columns: 1fr 1fr;
-}
-
-.adminContent  section .card  img {
-  width: 172px;
-  height : 80px;
-  border-radius: 8.57px;
 }
