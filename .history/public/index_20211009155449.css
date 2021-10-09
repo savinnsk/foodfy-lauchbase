@@ -285,8 +285,7 @@ div#text{
   font-size: 36px;
   color: black;
   height:42px;
-  text-align: center;
-  margin-top:50px
+  text-align: center
 
 }
 
@@ -412,7 +411,7 @@ grid-template-columns: 1fr 1fr ;
 
 }
 
- .logoAdmin{
+.adminContainer .logo{
 
   margin-left : 231px;
  
@@ -446,6 +445,7 @@ grid-template-columns: 1fr 1fr ;
   font-weight: 500;
   font-size: 18px;
   color: #111111;
+  margin-top: 50px;
 }
 
 .adminContent .autor {

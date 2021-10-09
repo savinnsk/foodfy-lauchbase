@@ -412,7 +412,7 @@ grid-template-columns: 1fr 1fr ;
 
 }
 
- .logoAdmin{
+.adminContainer .logo{
 
   margin-left : 231px;
  
@@ -489,7 +489,7 @@ cursor: pointer;
   
 }
 
-.fildsCardHeader button {
+.fildsCardHeader .buttonEdit {
   font-family: 'roboto';
   font-weight: bold;
   font-size: 16px;

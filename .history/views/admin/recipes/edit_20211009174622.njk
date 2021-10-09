@@ -1,13 +1,11 @@
-{% extends "layoutAdmin.njk"  %}
+{% extends "layout.njk"  %}
 
 
 {% block head  %}
-  <title>Editar receitas </title>
+  <title>receitas </title>
 {% endblock %} 
 
 {% block content %}
-
-
 
 
   <div class="card_recipes" >
@@ -52,19 +50,50 @@
         </div>
       
 
-       </div>
-        <div class="info_add">
+       <input type="text">     
+    </form>
+    
+
+    <h1 class="title_recipes">{{data_function.title}}</h1>
+    <div class="autor_recipes">por  {{data_function.author}}</div>
+
+  </div>
+
+
+  <section class="informations" >
+    
+    <div class="ingredients">
+
+      <div class="box" id="box3" >
+      <h1 >Ingredientes</h1><input onclick="info_ingre();" type="button" id="ingredients"   value="Esconder" >
+      </div>
+
+      <ul class="show">
+        {% for ingredients in data_function.ingredients %}
+          <li id ="content_igredients" >{{ ingredients }};</li>
+        {% endfor %}
+      </ul>
+
+    </div>
+    <div class="madeof">
+
+
+      <div class="box" id= "box2" >
+      <h1 class="information"> Modo de preparo </h1><input  onclick="madeof();" type="button" id="madeof" value="Mostrar" >
+      </div>
+    
+    </div>
+      <div class="info_add">
         
-            <p>Informações adicionais</p>
+        <div class="box">
+        <h1 class="information">Informações adicionais</h1><input onclick="information();" type="button" id="info"  value="Esconder" >
+        </div>
         <ul class="show"> 
           <li> <p id ="content_information">{{data_function.information}} </p></li>
         </ul>
       </div>
 
-         
-    </form>
-    
-
+  </section>
 
 
 

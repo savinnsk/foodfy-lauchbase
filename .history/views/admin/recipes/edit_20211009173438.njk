@@ -1,0 +1,81 @@
+{% extends "layout.njk"  %}
+
+
+{% block head  %}
+  <title>receitas </title>
+{% endblock %} 
+
+{% block content %}
+
+
+  <div class="card_recipes" >
+
+    <div class="fildsCardHeader">
+      <h1 id ="titleFilds">Editando receita</h1>
+
+      <div>
+        <a href="/admin/edit/{{data_function.id}}">
+            <button>Deletar receita</button>
+        </a>
+
+        <a href="/admin/edit/{{data_function.id}}">
+            <button>Salvar receita</button>
+        </a>
+      </div>
+    
+    </div>
+
+
+    <form action="" method="POST"></form>
+    
+    <img class="image_recipes" src="{{data_function.image}}">
+    <h1 class="title_recipes">{{data_function.title}}</h1>
+    <div class="autor_recipes">por  {{data_function.author}}</div>
+
+  </div>
+
+
+  <section class="informations" >
+    
+    <div class="ingredients">
+
+      <div class="box" id="box3" >
+      <h1 >Ingredientes</h1><input onclick="info_ingre();" type="button" id="ingredients"   value="Esconder" >
+      </div>
+
+      <ul class="show">
+        {% for ingredients in data_function.ingredients %}
+          <li id ="content_igredients" >{{ ingredients }};</li>
+        {% endfor %}
+      </ul>
+
+    </div>
+    <div class="madeof">
+
+
+      <div class="box" id= "box2" >
+      <h1 class="information"> Modo de preparo </h1><input  onclick="madeof();" type="button" id="madeof" value="Mostrar" >
+      </div>
+      <ul class = "hide" >
+        {% for preparation in data_function.preparation %}
+          <li id ="content_preparation" >{{ preparation }} </li>
+        {% endfor %}
+      </ul>
+    </div>
+      <div class="info_add">
+        
+        <div class="box">
+        <h1 class="information">Informações adicionais</h1><input onclick="information();" type="button" id="info"  value="Esconder" >
+        </div>
+        <ul class="show"> 
+          <li> <p id ="content_information">{{data_function.information}} </p></li>
+        </ul>
+      </div>
+
+  </section>
+
+
+
+
+{% endblock %}
+

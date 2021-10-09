@@ -11,7 +11,8 @@ routes.get("/", function(req ,res){
 routes.get("/about",function(req ,res){
     return res.render("about");   
     })
-   
+    
+    
 routes.get("/revenue", function (req , res ){   
     return res.render("revenue" , { data : data });  
     })
@@ -32,39 +33,29 @@ routes.get("/recipes/:id", function(req , res){
       res.render("recipes", { data_function })
     })
 
+
 routes.get("/admin/recipes" , function (req , res) {
     return res.render("admin/recipes/listRecipes"  , { data : data })
 })    
 
+
     
 routes.get("/admin/show/:id", function(req , res){    
-    const id = req.params.id // requering params from url 
+    const id = req.params.id
+  
     // function to find especific id     
       const data_function = data.find(function (data_function) {
         return(data_function.id == id)        
-      })  
+      })
+  
      if (!data_function) {
          return res.send("Receita não encontrada!")
       }
-      
+  
+
+      console.log(data_function)
     res.render("admin/recipes/show", { data_function })
   })
 
-
- routes.get("/admin/edit/:id", function(req , res) {
-
-
-  const id = req.params.id // requering params from url 
-    // function to find especific id     
-      const data_function = data.find(function (data_function) {
-        return(data_function.id == id)        
-      })  
-     if (!data_function) {
-         return res.send("Receita não encontrada!")
-      }
-
-  return res.render("admin/recipes/edit" ,  {  data_function} )
-
- }) 
 
     module.exports = routes ;
