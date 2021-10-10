@@ -1,0 +1,20 @@
+const fs = require("fs")
+
+exports.create = function (req , res ){
+  
+    const keys = Object.keys(req.body)
+
+    let [] = req.body
+  
+    for( key of keys) {
+      if(req.body[key] == ""){
+        return res.send("Por favor preencha todos os campos")
+      }
+    }
+
+
+    fs.writeFile(JSON.parse(req.body))
+  
+    return res.send(req.body)   
+
+}

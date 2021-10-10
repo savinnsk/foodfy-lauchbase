@@ -1,4 +1,4 @@
-const routes = require('./routes') 
+const routes = require("./routes") 
 const express = require("express");
 const server = express();
 server.use(routes)
@@ -8,7 +8,7 @@ const nunjucks = require("nunjucks")
 
 //Middleware
 
-server.use(express.static('public'));
+server.use(express.static("public"));
 server.set("view engine" ,"njk");
 
 

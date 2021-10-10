@@ -1,0 +1,25 @@
+{
+  "recipes": [
+    {
+      "recipeUrl": "https://ssa.com",
+      "ingredients": "sadsda",
+      "manner": "asd",
+      "infoAdd": "fg",
+      "id": 1
+    },
+    {
+      "recipeUrl": "https://ssa.com",
+      "ingredients": "sadsda",
+      "manner": "asd",
+      "infoAdd": "fg",
+      "id": 2
+    },
+    {
+      "recipeUrl": "https://ssa.com",
+      "ingredients": "sadsda",
+      "manner": "asd",
+      "infoAdd": "fg",
+      "id": 3
+    }
+  ]
+}

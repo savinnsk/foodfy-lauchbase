@@ -6,7 +6,7 @@ const nunjucks = require("nunjucks")
 
 //Middleware
 
-server.use(express.static('public'));
+server.use(express.static("public"));
 server.set("view engine" ,"njk");
 
 

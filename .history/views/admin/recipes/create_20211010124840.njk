@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nova Receita</title>
+    </head>
+
+        <header>
+            <img class="logo" src="/logoWhite.png">
+        </header>
+        
+
+    <body>
+
+        <form method="post" action="/admin/recipes/">
+
+            <div class="formHeader">
+                <h1>Criando Receita</h1>
+                <button type="submit">Salvar receitas</button>
+            </div>
+
+            <section>
+
+                <div>
+                    <h3>imagem da receita</h3>
+                    <input name="recipeUrl" type="url">
+                </div>
+
+
+                <div>
+                    <h3>Ingredientes</h3>
+                    <input name="ingredients" type="text">
+                </div>
+
+                <div>
+                    <h3>Modo de preparo</h3>
+                    <input name="manner" type="text">
+                </div>
+
+                <div>
+                    <h3>Informações Adicionais</h3>
+                    <input name="manner" type="text">
+                </div>
+
+            </section>
+           
+        
+        </form>
+          
+    </body>
+</html>
