@@ -70,7 +70,7 @@ routes.get("/admin/show/:id", recipes.show)
       }
       
 
-  return res.render("admin/recipes/edit" ,   data )
+  return res.render("admin/recipes/edit" ,  {  data_function} )
 
  }) 
 

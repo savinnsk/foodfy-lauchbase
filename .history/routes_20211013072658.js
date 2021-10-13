@@ -60,7 +60,7 @@ routes.get("/admin/show/:id", recipes.show)
  routes.get("/admin/edit/:id", function(req , res) {
 
 
-  const id = req.params.id // requering params from url 
+ /* const id = req.params.id // requering params from url 
     // function to find especific id     
       const data_function = data.find(function (data_function) {
         return(data_function.id == id)        
@@ -68,7 +68,7 @@ routes.get("/admin/show/:id", recipes.show)
      if (!data_function) {
          return res.send("Receita não encontrada!")
       }
-      
+      */
 
   return res.render("admin/recipes/edit" ,   data )
 

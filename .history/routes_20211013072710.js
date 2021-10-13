@@ -68,7 +68,7 @@ routes.get("/admin/show/:id", recipes.show)
      if (!data_function) {
          return res.send("Receita não encontrada!")
       }
-      
+      */
 
   return res.render("admin/recipes/edit" ,   data )
 
