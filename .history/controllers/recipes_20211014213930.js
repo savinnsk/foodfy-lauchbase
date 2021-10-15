@@ -32,8 +32,6 @@ exports.create = function (req , res ){
    
 
 }
-
-
 exports.show = function (req , res){
 
         const id = req.params.id  
@@ -47,4 +45,19 @@ exports.show = function (req , res){
           
         res.render("admin/recipes/show", { comparingId })
       }
+exports.edit = function(req , res) {
+
+  const id = req.params.id 
+
+  const data_function = data.recipes.find(function (data_function) {
+        return(data_function.id == id)        
+      })  
+     if (!data_function) {
+         return res.send("Receita não encontrada!")
+      }
+      
+
+  return res.render("admin/recipes/edit" ,   { data_function} )
+
+ }
     

@@ -1,7 +1,7 @@
 const express = require("express"); 
 const routes = express.Router();
 const data = require("./data.json")
-const recipes = require("./controllers/admin/recipes")
+const recipes = require("./controllers/recipes")
 
 let multer = require("multer");
 let upload = multer();
@@ -49,7 +49,7 @@ routes.get("/admin/show/:id",recipes.show)
 routes.get("/admin/edit/:id",recipes.edit) 
 
 routes.put("/admin/edit/:id",recipes.update)
-routes.post("/" , upload.fields([]), recipes.create) 
+routes.post("/admin/create/:id" , upload.fields([]), recipes.create) 
 
 
 

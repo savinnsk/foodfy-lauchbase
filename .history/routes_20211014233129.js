@@ -1,7 +1,7 @@
 const express = require("express"); 
 const routes = express.Router();
 const data = require("./data.json")
-const recipes = require("./controllers/admin/recipes")
+const recipes = require("./controllers/recipes")
 
 let multer = require("multer");
 let upload = multer();
@@ -43,14 +43,15 @@ routes.get("/recipes/:id", function(req , res){
 routes.get("/admin/recipes" , function (req , res) {
     return res.render("admin/recipes/listRecipes"  , { data : data })
   })
+
+  
 routes.get("/admin/create" , function (req ,res ){ 
   return res.render("admin/recipes/create")})
+
+routes.get("/admin/")
+
+routes.post("/" , upload.fields([]), recipes.create)   
 routes.get("/admin/show/:id",recipes.show)
 routes.get("/admin/edit/:id",recipes.edit) 
-
-routes.put("/admin/edit/:id",recipes.update)
-routes.post("/" , upload.fields([]), recipes.create) 
-
-
 
 module.exports = routes ;
