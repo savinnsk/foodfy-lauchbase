@@ -29,15 +29,11 @@
 
 
     <form action="/" method="POST">
-
-        <input name="id" type="hidden" value="{{recipesTable.id }}" />
-
-
-        
         <p>Imagem da receita</p><input type="url" value="{{recipesTable.image}}">
-     
-           
-        
+
+         <div type="hidden" >      
+            <input value="{{recipesTable.id }}" />
+        </div>
 
         <div>      
             <p >Ingredientes</p>

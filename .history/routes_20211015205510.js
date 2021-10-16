@@ -13,11 +13,12 @@ routes.get("/", function(req ,res){
 routes.get("/about",function(req ,res){
     return res.render("about");   
     })
-
+   
 routes.get("/revenue", function (req , res ){   
     return res.render("revenue" , { data : data });  
     })
-       
+    
+    
 routes.get("/recipes/:id", function(req , res){    
       const id = req.params.id
     

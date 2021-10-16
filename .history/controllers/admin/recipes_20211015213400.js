@@ -64,18 +64,7 @@ exports.edit = function(req , res) {
 exports.update = function(req , res){
 
   const id = req.body;
-  let count = 0;
 
-  const recipesTabele = data.recipes.find(function( recipe ,idRecipe ) {
-      if(id == recipe.id ){
-        count = idRecipe ;
-        return true
-
-      }
-  });
-
-
-  
 
   
 };

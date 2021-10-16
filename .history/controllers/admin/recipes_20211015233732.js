@@ -72,10 +72,7 @@ exports.update = function(req , res){
         return true
 
       }
-  });
-
-
-  
+  })
 
   
 };
