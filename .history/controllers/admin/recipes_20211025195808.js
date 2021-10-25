@@ -103,20 +103,6 @@ fs.writeFile("data.json", JSON.stringify( data ,null, 2), function(err) {
 exports.delete = function (req , res){
 
   const {id} = req.body 
-
-
-  const filteredRecipe = data.recipes.filter(function(recipe){ //only get whatis true
-      return recipe.id != id ;
-  }) 
-
-  data.recipes = filteredRecipe;
-
-
-  fs.writeFile("data.json" , JSON.stringify( data ,  null , 2) ,function(err){
-    if(err) return("error to delete")
-
-
-   return  res.redirect("/")
-  } )
+  let index = 0 ;
 
 }

@@ -112,7 +112,7 @@ exports.delete = function (req , res){
   data.recipes = filteredRecipe;
 
 
-  fs.writeFile("data.json" , JSON.stringify( data ,  null , 2) ,function(err){
+  fs.writeFile("data.json" , stringify( data ,  null , 2) ,function(err){
     if(err) return("error to delete")
 
 

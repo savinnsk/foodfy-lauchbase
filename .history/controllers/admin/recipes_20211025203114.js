@@ -103,7 +103,7 @@ fs.writeFile("data.json", JSON.stringify( data ,null, 2), function(err) {
 exports.delete = function (req , res){
 
   const {id} = req.body 
-
+  let index = 0 ;
 
   const filteredRecipe = data.recipes.filter(function(recipe){ //only get whatis true
       return recipe.id != id ;
@@ -112,7 +112,7 @@ exports.delete = function (req , res){
   data.recipes = filteredRecipe;
 
 
-  fs.writeFile("data.json" , JSON.stringify( data ,  null , 2) ,function(err){
+  fs.writeFile("data.json" , stringify( data ,  null , 2) ,function(err){
     if(err) return("error to delete")
 
 

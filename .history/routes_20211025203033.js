@@ -44,7 +44,7 @@ routes.get("/admin/edit/:id",recipes.edit)
 // methods admin
 routes.put("/",recipes.update)
 routes.post("/" , upload.fields([]), recipes.create)
-routes.delete("/" , recipes.delete)
+routes.put("/" , recipes.delete)
 
 
 

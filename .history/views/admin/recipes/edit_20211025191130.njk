@@ -17,10 +17,10 @@
 
       <div>
        
-           
+            <button>Deletar receita</button>
         </a>
 
-            <button type="submit">Salvar receita</button>
+            <button type="submit"  >Salvar receita</button>
         </a>
       </div>
     
@@ -33,7 +33,7 @@
 
 
         
-        <p>Imagem da receita</p><input  name="recipeUrl" type="url" value="{{recipesTable.recipeUrl}}">
+        <p>Imagem da receita</p><input type="url" value="{{recipesTable.recipeUrl}}">
      
            
         
@@ -42,7 +42,7 @@
             <p >Ingredientes</p>
             <ul >
                 {% for ingredients in recipesTable.ingredients %}
-                <li name="ingredients" id ="content_igredients" >{{ ingredients }};</li>
+                <li id ="content_igredients" >{{ ingredients }};</li>
                 {% endfor %}
             </ul>
         </div>
@@ -53,7 +53,7 @@
 
              <ul >
                 {% for preparation in recipesTable.preparation %}
-                    <li name="manner" id ="content_preparation" >{{ preparation }} </li>
+                    <li id ="content_preparation" >{{ preparation }} </li>
                 {% endfor %}
             </ul>
         </div>
@@ -64,18 +64,11 @@
         
             <p>Informações adicionais</p>
         <ul class="show"> 
-          <li> <input  name="infoAdd" id ="content_information"  value="{{ recipesTable.infoAdd }}"/></li>
+          <li> <input id ="content_information"  value="{{ recipesTable.infoAdd }}"> </input></li>
         </ul>
       </div>
 
          
-    </form>
-
-
-    <form method="POST" action="/?_method=DELETE" >
-          <input value="{{recipesTable.id}}" name="id" type="hidden"/>
-         <button type="submit">Deletar receita</button>
-    
     </form>
     
 

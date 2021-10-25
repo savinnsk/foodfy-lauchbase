@@ -41,11 +41,9 @@ routes.get("/admin/show/:id",recipes.show)
 routes.get("/admin/edit/:id",recipes.edit) 
 
 
-// methods admin
+// methods
 routes.put("/",recipes.update)
-routes.post("/" , upload.fields([]), recipes.create)
-routes.delete("/" , recipes.delete)
-
+routes.post("/" , upload.fields([]), recipes.create) 
 
 
 

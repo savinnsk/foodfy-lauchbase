@@ -9,14 +9,14 @@ const methodOverride = require("method-override");
 
 
 //Middleware
-server.use(methodOverride("_method"))
+
 server.use(express.urlencoded({    
   // to support URL-encoded bodies
   extended: true}));  // allow req with body
 server.use( express.json())
 server.use(express.static("public"));
 server.set("view engine" ,"njk");
-
+server.use(methodOverride("_method"))
 server.use(routes)
 nunjucks.configure("views",{
  express:server,
