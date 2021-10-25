@@ -30,8 +30,8 @@ routes.get("/recipes/:id", function(req , res){
       res.render("recipes", { data_function })
     })
 
-
 //admin routes
+
 routes.get("/admin/recipes" , function (req , res) {
     return res.render("admin/recipes/listRecipes"  , { data : data })
   })
@@ -42,7 +42,8 @@ routes.get("/admin/edit/:id",recipes.edit)
 
 
 // methods
-routes.put("/admin/recipes",recipes.update)
+
+routes.put("/admin/edit/:id",recipes.update)
 routes.post("/" , upload.fields([]), recipes.create) 
 
 

@@ -79,8 +79,7 @@ exports.update = function(req , res){
 
   const recipe = {
     ...foundRecipe,
-    ...req.body,
-    id: Number(req.body.id)
+    ...req.body
   }
 
 data.recipes[index] = recipe;

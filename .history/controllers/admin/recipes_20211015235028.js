@@ -49,48 +49,33 @@ exports.edit = function(req , res) {
 
   const id = req.params.id 
 
-  const foundRecipe = data.recipes.find(function (data_function) {
+  const recipesTable = data.recipes.find(function (data_function) {
         return(data_function.id == id)        
       })  
-     if (!foundRecipe) {
+     if (!recipesTable) {
          return res.send("Receita não encontrada!")
       }
 
 
-  return res.render("admin/recipes/edit" ,   {  recipesTable : foundRecipe } )
+  return res.render("admin/recipes/edit" ,   { recipesTable } )
 
- }                                                                              
+ }
     
 exports.update = function(req , res){
 
-  const {id} = req.body;
-  let index = 0;
+  const id = req.body;
+  let count = 0;
 
-  const foundRecipe = data.recipes.find(function( recipe ,foundIndex ) {
+  const recipesTable = data.recipes.find(function( recipe ,idRecipe ) {
       if(id == recipe.id ){
-        index = foundIndex ;
+        count = idRecipe ;
         return true}
   });
 
-
-  if (!foundRecipe) return res.send("recipe not found");
-
-  
-
-  const recipe = {
-    ...foundRecipe,
-    ...req.body,
-    id: Number(req.body.id)
-  }
-
-data.recipes[index] = recipe;
-
-fs.writeFile("data.json", JSON.stringify( data ,null, 2), function(err) {
-  if(err) return res.send("write error!")
+  if (!recipesTable) return res.send("recipe not found");
 
 
-  return res.redirect('/admin/recipes')
-})
+
 
   
 };

@@ -42,7 +42,7 @@ routes.get("/admin/edit/:id",recipes.edit)
 
 
 // methods
-routes.put("/admin/recipes",recipes.update)
+routes.put("/admin/edit/:id",recipes.update)
 routes.post("/" , upload.fields([]), recipes.create) 
 
 

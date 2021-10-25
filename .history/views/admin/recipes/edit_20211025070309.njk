@@ -8,7 +8,7 @@
 {% block content %}
 
 
-  <form method="POST" action="/admin/recipes?_method=PUT" >
+  <form method="POST" action="/?_method=PUT" >
 
   <div class="card_recipes" >
 
@@ -16,7 +16,7 @@
       <h1 id ="titleFilds">Editando receita</h1>
 
       <div>
-       
+        <a href="/admin/edit/{{recipesTable.id}}">
             <button>Deletar receita</button>
         </a>
 
@@ -64,7 +64,7 @@
         
             <p>Informações adicionais</p>
         <ul class="show"> 
-          <li> <input id ="content_information"  value="{{ recipesTable.infoAdd }}"> </input></li>
+          <li> <input id ="content_information">{{recipesTable.infoAdd}} </input></li>
         </ul>
       </div>
 

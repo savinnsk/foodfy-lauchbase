@@ -63,7 +63,7 @@ exports.edit = function(req , res) {
     
 exports.update = function(req , res){
 
-  const {id} = req.body;
+  const id = req.body;
   let index = 0;
 
   const foundRecipe = data.recipes.find(function( recipe ,foundIndex ) {
@@ -79,8 +79,7 @@ exports.update = function(req , res){
 
   const recipe = {
     ...foundRecipe,
-    ...req.body,
-    id: Number(req.body.id)
+    ...req.body
   }
 
 data.recipes[index] = recipe;
